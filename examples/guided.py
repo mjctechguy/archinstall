@@ -3,6 +3,15 @@ import archinstall
 from archinstall.lib.hardware import hasUEFI
 from archinstall.lib.profiles import Profile
 
+
+archinstall.arguments['keyboard-language'] = 'us'
+archinstall.arguments['mirror-region'] = 'United Kingdom'
+archinstall.arguments['hostname'] = 'arch'
+archinstall.arguments['!root-password'] = 'password'
+archinstall.arguments['timezone'] = 'Europe/London'
+archinstall.arguments['packages'] = 'micro code'
+
+
 def ask_user_questions():
 	"""
 	  First, we'll ask the user for a bunch of user input.
